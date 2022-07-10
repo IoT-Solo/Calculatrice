@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons>
+    <ion-buttons>
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>A propos:</ion-title>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h2>Fait par</h2>
+  <ion-card *ngFor="let e of etudiants" [style.background]="'gainsboro'">
+    <ion-card-header>
+      <ion-card-title>
+        <span [style.background]="'cornflowerblue'">{{e.prenom}} {{e.nom |
+          uppercase}}</span>
+      </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <span></span>
+      <p>Tél:<strong>{{e.telephone}}</strong> </p>
+      <p>Email:<strong>{{e.email}}</strong> </p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+<ion-footer>
+  <app-signature></app-signature>
+</ion-footer>

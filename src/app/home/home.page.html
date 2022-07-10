@@ -1,0 +1,85 @@
+
+
+<ion-content [fullscreen]="true">
+  <div class="calc-main">
+    <div class="moitie1">
+      <ion-buttons slot="primary" class="droite">
+        <ion-button [routerLink]="['/propos']" routerDirection="forward">
+          <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    <div class="calc-display">
+      <ion-input readonly="true" disabled="false" type="text" [(ngModel)]="display" class="ion-text-end"></ion-input>
+      <ion-input readonly="true" disabled="false" type="text" [(ngModel)]="displa" class="ion-text-end"></ion-input>
+    </div>
+  </div>
+  <div class="moitie2">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-button shape="round" class="triple-width" color="primary" (click)="click('ac')">Tout effacer</ion-button>
+        </ion-col>
+        <ion-col size="6">
+          <ion-button shape="round" class="triple-width" color="danger"  (click)="click('c')">C</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-img src='../assets/sept.jpg' style="width: 60%; height: 70%;" (click)="click('7')"></ion-img>
+        </ion-col>
+        <ion-col>
+          <ion-img src='../assets/huit.jpg' style="width: 60%; height: 70%;" (click)="click('8')"></ion-img>
+        </ion-col>
+        <ion-col>
+          <ion-img src='../assets/neuf.jpg' style="width: 60%; height: 70%;" (click)="click('9')"></ion-img>
+        </ion-col>
+        <ion-col>
+          <ion-img src='../assets/fois.jpg' style="width: 60%; height: 70%;" (click)="click('X')"></ion-img>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-img src='../assets/quatre.jpg' style="width: 60%; height: 70%;" (click)="click('4')"></ion-img>
+        </ion-col>
+        <ion-col>
+          <ion-img src='../assets/cinq.jpg' style="width: 60%; height: 70%;" (click)="click('5')"></ion-img>
+        </ion-col>
+        <ion-col>
+          <ion-img src='../assets/six.jpg' style="width: 60%; height: 70%;" (click)="click('6')"></ion-img>
+        </ion-col>
+        <ion-col>
+          <ion-img src='../assets/moins.jpg' style="width: 60%; height: 70%;" (click)="click('-')"></ion-img>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-img src='../assets/un.jpg' style="width: 60%; height: 70%;" (click)="click('1')"></ion-img>
+        </ion-col>
+        <ion-col>
+          <ion-img src='../assets/deux.jpg' style="width: 60%; height: 70%;" (click)="click('2')"></ion-img>
+        </ion-col>
+        <ion-col>
+          <ion-img src='../assets/trois.jpg' style="width: 60%; height: 70%;" (click)="click('3')"></ion-img>
+        </ion-col>
+        <ion-col>
+          <ion-img src='../assets/plus.jpg' style="width: 60%; height: 70%;" (click)="click('+')"></ion-img>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col >
+          <ion-img src='../assets/zero.jpg' style="width: 60%; height: 70%;" (click)="click('0')"></ion-img>
+        </ion-col>
+        <ion-col>
+          <ion-img src='../assets/virgul.jpg' style="width: 60%; height: 70%;" (click)="click(',')"></ion-img>
+        </ion-col>
+        <ion-col>
+          <ion-img src='../assets/egal.jpg' style="width: 60%; height: 70%;" (click)="click('=')"></ion-img>
+        </ion-col>
+        <ion-col>
+          <ion-img src='../assets/div.jpg' style="width: 60%; height: 70%;" (click)="click('/')"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  </div>
+</ion-content>
